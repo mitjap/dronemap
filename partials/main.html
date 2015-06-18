@@ -1,0 +1,25 @@
+<ui-gmap-google-map center="center" zoom="zoom">
+    <ui-gmap-drawing-manager options="drawingManagerOptions" control="drawingManagerControl"></ui-gmap-drawing-manager>
+</ui-gmap-google-map>
+
+
+<div class="fabSpeedDialdemoBasicUsage">
+  <md-fab-speed-dial md-open="false" md-direction="up" class="md-fling">
+    <md-fab-trigger>
+      <md-button aria-label="menu" class="md-fab md-primary">
+        <md-icon md-svg-icon="add"></md-icon>
+      </md-button>
+    </md-fab-trigger>
+    <md-fab-actions>
+      <md-button aria-label="circle" class="md-fab md-raised md-mini" ng-click="draw('circle')">
+        <md-icon md-svg-icon="add-circle"></md-icon>
+      </md-button>
+      <md-button aria-label="rectangular" class="md-fab md-raised md-mini" ng-click="draw('rectangle')">
+        <md-icon md-svg-icon="add-box"></md-icon>
+      </md-button>
+      <md-button aria-label="polygon" class="md-fab md-raised md-mini" ng-click="draw('polygon')">
+        <md-icon md-svg-icon="gesture"></md-icon>
+      </md-button>
+    </md-fab-actions>
+  </md-fab-speed-dial>
+</div>
