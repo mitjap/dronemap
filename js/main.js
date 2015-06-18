@@ -54,6 +54,7 @@ angular.module('drone-supervisor-app', ['ngMaterial', 'ui.router', 'uiGmapgoogle
 	uiGmapGoogleMapApi.then(function(maps) {
 
       $scope.drawingManagerOptions = {
+        drawingControl: false,
         circleOptions: {
           editable: true  
         },
